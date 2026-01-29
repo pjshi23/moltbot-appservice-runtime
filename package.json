@@ -1,0 +1,32 @@
+{
+  "name": "moltbot-appservice-runtime",
+  "version": "1.0.0",
+  "description": "MoltBot runtime optimized for Azure App Service deployment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "install-moltbot": "npm install -g moltbot@latest",
+    "sync-skills": "node scripts/sync-skills.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "axios": "^1.6.0",
+    "node-cron": "^3.0.0",
+    "@azure/keyvault-secrets": "^4.7.0",
+    "@azure/identity": "^3.4.0",
+    "simple-git": "^3.20.0",
+    "fs-extra": "^11.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "moltbot",
+    "azure",
+    "app-service",
+    "whatsapp",
+    "ai-assistant"
+  ],
+  "license": "MIT"
+}
